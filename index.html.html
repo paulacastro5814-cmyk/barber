@@ -1,0 +1,175 @@
+<html>
+   <head>
+    <title>barberia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="barberia.css.css">
+  </head>
+
+ <body>
+   </div>
+      <header>
+        <div class="resolucion"> </div>
+        <div class="movil"></div>
+        <div class="container nav">
+        <div class="brand">
+        <div class="logo"><img src="nuv-logo.jpg.jpeg" alt="logo" width="50"></div>
+        <div>
+          <div style="font-weight:800">Barber SIN-BR</div>
+          <div style="font-size:12px;opacity:0.8">Neuquen-capital</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#cortes">Cortes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-left">
+        <h1>Un barbero. Estilo único.</h1>
+        <p>Especialista en cortes modernos y clásicos. Atención personalizada y diseños de primera.</p>
+        <a class="cta" href="#contacto">Solicita tu turno</a>
+      </div>
+
+      <div class="container hero-right">
+        <div class="hero-card">
+          <video src="nuv_l.jpg.mp4" controls></video>
+        </div>
+      </div>
+    </section>
+    <section class="barber">
+      <div class="container barber-inner">
+        <div class="barber-photo">
+          <img src="nuv-logo.jpg.jpeg" alt="Barbero">
+        </div>
+
+        <div>
+          <h2>Barbero — Tobias Queupil</h2>
+          <p>Tobias es barbero profesional con 3 años de experiencia, con título certificado. Atención personalizada: sugerencia de estilo, mantenimiento y diseños personalizados.</p>
+          <p><strong>Horario:</strong> consultar al barbero.</p>
+        </div>
+      </div>
+    </section>
+    <section id="cortes" class="gallery">
+      <div class="container">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px">
+          <h2 style="margin:0">Mis cortes destacados</h2>
+          <div style="font-size:14px;opacity:0.8">Haz click en una foto para agrandar</div>
+        </div>
+
+        <div class="gallery-grid" id="gallery">
+
+          <div class="card" data-full="corte1.jpg.jpeg">
+            <img src="corte1.jpg.jpeg" >
+            <div class="meta"><span class="tag">Mechas + corte</span></div>
+          </div>
+
+          <div class="card" data-full="corte2.jpg.jpeg">
+            <img src="corte2.jpg.jpeg" >
+            <div class="meta"><span class="tag">Mullet</span></div>
+          </div>
+
+          <div class="card" data-full="corte3.jpg.jpeg">
+            <img src="corte3.jpg.jpeg">
+            <div class="meta"><span class="tag">Degrade + diseño</span></div>
+          </div>
+
+          <div class="card" data-full="corte10.jpg.jpeg">
+            <img src="corte10.jpg.jpeg">
+            <div class="meta"><span class="tag">Buzz-cut + diseño</span></div>
+          </div>
+
+          <div class="card" data-full="cortee11.jpg.jpeg">
+            <img src="cortee11.jpg.jpeg">
+            <div class="meta"><span class="tag">Buzz-cut  +diseño+color</span></div>
+          </div>
+
+          <div class="card" data-full="diceños.jpg.jpeg">
+            <img src="diceños.jpg.jpeg">
+            <div class="meta"><span class="tag">Diseño + corte</span></div>
+          </div>
+
+          <div class="card" data-full="diceños2.jpg.jpeg">
+            <img src="diceños2.jpg.jpeg">
+            <div class="meta"><span class="tag">Diseño personalizado</span></div>
+          </div>
+
+          <div class="card" data-full="corte7.jpg.jpeg">
+            <img src="corte7.jpg.jpeg">
+            <div class="meta"><span class="tag">Mid fade en punta</span></div>
+          </div>
+
+          <div class="card" data-full="corte8.jpg.jpeg">
+            <img src="corte8.jpg.jpeg">
+            <div class="meta"><span class="tag">Mullet + diseño</span></div>
+          </div>
+
+          <div class="card" data-full="corte9.jpg.jpeg">
+            <img src="corte9.jpg.jpeg">
+            <div class="meta"><span class="tag">Mullet</span></div>
+          </div>
+          <div class="card" data-full="corte4.jpeg">
+            <img src="corte4.jpeg">
+            <div class="meta"><span class="tag">Mullet+diceño+color</span></div>
+          </div>
+          <div class="card" data-full="corte4.jpeg">
+            <img src="corte20.jpeg">
+            <div class="meta"><span class="tag">Mullet</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" style="padding:32px 20px; background:#080808; color:white;">
+      <div class="container">
+        <h2>Contacto y ubicación</h2>
+        <p>Dirección: Palpalá 1265, Neuquén Capital</p>
+        <p><h3>¡Reserva tu turno!</h3></p>
+
+        <p onclick="copiarTelefono()" style="cursor:pointer; color:rgb(248, 61, 61);">
+          2996335582 (tocá para copiar)
+        </p>
+
+        <script>
+          function copiarTelefono() {
+              navigator.clipboard.writeText("2996335582");
+              alert("Número copiado. Tobias Queupil: 2996335582");
+          }
+        </script>
+
+        <p>Instagram: 
+          <a href="https://instagram.com/_tobiibarber2" target="_blank" style="color:white;">
+            @_tobiibarber2
+          </a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+   <div id="modal" class="modal">
+    <img id="modalImg">
+   </div>
+  <script>
+    document.querySelectorAll('.card').forEach(card=>{
+      card.addEventListener('click',()=>{
+        const full = card.getAttribute('data-full');
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modalImg');
+        modalImg.src = full;
+        modal.classList.add('show');
+      });
+    });
+
+    document.getElementById('modal').addEventListener('click',()=>{
+      const modal = document.getElementById('modal');
+      modal.classList.remove('show');
+      document.getElementById('modalImg').src='';
+    });
+  </script>
+
+ </body>
+</html>
